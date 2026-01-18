@@ -1,0 +1,36 @@
+@keyframes scan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(1000%); }
+}
+
+@keyframes progress {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+@keyframes orbit {
+  0% { transform: rotate(0deg) translate(60px) rotate(0deg); }
+  100% { transform: rotate(360deg) translate(60px) rotate(-360deg); }
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animate-scan {
+  animation: scan 2s linear infinite;
+}
+
+.animate-progress {
+  animation: progress 20s linear infinite;
+}
+
+.animate-orbit {
+  animation: orbit 3s linear infinite;
+}
+
+.animate-gradient-shift {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}

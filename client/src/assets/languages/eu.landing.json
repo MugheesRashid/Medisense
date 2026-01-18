@@ -1,0 +1,535 @@
+{
+  "nav": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "trust": "Trust & Safety",
+    "login": "Login",
+    "signup": "Sign Up",
+    "startCheck": "Start Check"
+  },
+  "hero": {
+    "aiTagline": "AI-Powered Medical Assistant",
+    "titleLine1": "Understand Your Symptoms with",
+    "titleLine2": "Intelligent AI Analysis",
+    "description": "Get instant, accurate symptom analysis powered by advanced artificial intelligence. Our system compares your symptoms against thousands of medical conditions to provide personalized insights.",
+    "startButton": "Start Free Analysis",
+    "howItWorksButton": "How It Works",
+    "trustBadges": {
+      "privacy": "100% Private",
+      "speed": "3-Minute Check",
+      "anonymous": "Anonymous",
+      "evidence": "Evidence-Based"
+    },
+    "workflow": {
+      "title": "AI Analysis Workflow",
+      "step1": "Start",
+      "step1Desc": "Begin your symptom analysis",
+      "step2": "Select Symptoms",
+      "step2Desc": "Choose from body map or search",
+      "step3": "AI Check",
+      "step3Desc": "Intelligent pattern analysis",
+      "step4": "Medical History",
+      "step4Desc": "Optional context for accuracy",
+      "step5": "Follow-up Questions",
+      "step5Desc": "AI-driven clarification",
+      "step6": "Results",
+      "step6Desc": "Personalized analysis & recommendations",
+      "timeLabel": "Total time",
+      "timeValue": "Under 3 minutes",
+      "successRate": "Success rate",
+      "completed": "Completed"
+    }
+  },
+  "stats": {
+    "symptoms": "Symptoms Analyzed",
+    "conditions": "Conditions",
+    "users": "Users Worldwide",
+    "rating": "Rating"
+  },
+  "howItWorks": {
+    "title": "How It Works in 3 Simple Steps",
+    "subtitle": "Get from symptoms to solutions in minutes",
+    "steps": {
+      "step1": {
+        "number": "01",
+        "title": "Select Symptoms",
+        "description": "Use interactive body map or search. Add severity and duration."
+      },
+      "step2": {
+        "number": "02",
+        "title": "AI Analysis",
+        "description": "Our AI analyzes symptoms using medical knowledge base."
+      },
+      "step3": {
+        "number": "03",
+        "title": "Get Results",
+        "description": "Receive urgency assessment, specialist recommendations, and action plan."
+      }
+    }
+  },
+  "features": {
+    "title": "Intelligent Health Features",
+    "subtitle": "Powered by advanced AI technology",
+    "items": {
+      "bodyMap": {
+        "title": "Interactive Body Map",
+        "description": "Tap on body areas to select symptoms visually"
+      },
+      "aiQuestions": {
+        "title": "Smart AI Questions",
+        "description": "Intelligent follow-up questions for accurate assessment"
+      },
+      "urgency": {
+        "title": "Urgency Assessment",
+        "description": "Color-coded priority levels with clear actions"
+      },
+      "multilingual": {
+        "title": "Multi-Language",
+        "description": "Available in multiple languages"
+      },
+      "privacy": {
+        "title": "Privacy Focused",
+        "description": "Anonymous analysis, no data storage"
+      },
+      "mobile": {
+        "title": "Mobile Optimized",
+        "description": "Perfect experience on any device"
+      }
+    }
+  },
+  "trust": {
+    "privacy": {
+      "title": "Privacy & Security",
+      "subtitle": "Your data is protected and anonymous",
+      "points": [
+        "No personal information stored",
+        "End-to-end encryption",
+        "HIPAA-compliant architecture",
+        "No account required"
+      ]
+    },
+    "disclaimer": {
+      "title": "Medical Disclaimer",
+      "subtitle": "Important safety information",
+      "emergency": {
+        "title": "For Medical Emergencies",
+        "description": "Call local emergency services immediately. Do not rely on this tool for emergencies."
+      },
+      "note": "MediSense AI is an educational tool for health information and guidance. Not a substitute for professional medical diagnosis or treatment."
+    },
+    "indicators": {
+      "evidence": "Evidence-Based",
+      "updates": "Regular Updates",
+      "expert": "Expert Reviewed",
+      "transparent": "Transparent"
+    }
+  },
+  "useCases": {
+    "title": "Who Benefits from MediSense?",
+    "subtitle": "Designed for diverse health needs",
+    "cases": {
+      "students": {
+        "title": "Students",
+        "description": "Late-night symptom worries? Get instant guidance without clinic wait times."
+      },
+      "parents": {
+        "title": "Parents",
+        "description": "Concerned about child symptoms? Know urgency levels instantly."
+      },
+      "elderly": {
+        "title": "Elderly",
+        "description": "Manage chronic conditions with symptom tracking and guidance."
+      },
+      "rural": {
+        "title": "Rural Areas",
+        "description": "Limited healthcare access? Get guidance before distant clinic visits."
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to Understand Your Symptoms?",
+    "description": "Get AI-powered health insights in minutes. No registration required.",
+    "button": "Start Free Symptom Check",
+    "users": "Used by {count}+ people worldwide"
+  },
+  "footer": {
+    "tagline": "Intelligent health guidance powered by AI",
+    "product": "Product",
+    "productLinks": ["How It Works", "Features", "Privacy", "Terms"],
+    "resources": "Resources",
+    "resourcesLinks": ["FAQ", "Blog", "Research", "About"],
+    "connect": "Connect",
+    "connectLinks": ["Email", "Twitter", "LinkedIn", "GitHub"],
+    "copyright": "© 2024 MediSense AI",
+    "disclaimer": "Not a substitute for professional medical advice.",
+    "builtWith": "Built with ❤️ for accessible healthcare."
+  },
+  "guide": {
+    "title": "How to Answer Questions Effectively",
+    "point1": "Please answer each question as accurately as possible based on your current symptoms.",
+    "point2": "If you encounter any confusing or out-of-context questions, you can skip them using the 'Skip' button.",
+    "point3": "You can always go back to edit your answers using the 'Previous' button.",
+    "point4": "Take your time - there's no rush. Accurate answers lead to better analysis.",
+    "getStarted": "Got it, Start Questions"
+  },
+    "mhguide": {
+    "title": "Medical History - Optional but Important",
+    "point1": "This medical history form is completely optional. You can skip it if you prefer.",
+    "point2": "However, providing details will significantly increase the accuracy of our analysis (up to 40%).",
+    "point3": "Your data is secure, encrypted, and will be deleted after analysis.",
+    "point4": "You can add custom chronic conditions not listed in the predefined options.",
+    "getStarted": "Got it, Let's Continue"
+  },
+  "mhformSections": {
+    "customConditions": "Custom Conditions",
+    "customConditionNote": "Add conditions not listed above (e.g., specific rare diseases)"
+  },
+  "mhplaceholders": {
+    "addCustomCondition": "Add custom chronic condition..."
+  },
+  "symptomDashboard": {
+    "title": "Symptom Checker",
+    "selectBodyPart": "Select Body Part",
+    "selectSymptom": "Select Symptom",
+    "addSymptomDetails": "Add Symptom Details",
+    "addCustomSymptom": "Add Custom Symptom",
+    "step1": "Step 1: Body",
+    "step2": "Step 2: Symptom",
+    "step3": "Step 3: Details",
+    "symptomsAdded": "{count} symptom{s} added",
+    "backToBodyMap": "Back to Body Map",
+    "backToSymptoms": "Back to Symptoms",
+    "searchOrganPlaceholder": "Write the organ or muscle",
+    "clickBodyPart": "Click on Body Part",
+    "frontView": "Front View",
+    "backView": "Back View",
+    "generalSymptoms": "General Symptoms",
+    "generalSymptomsDesc": "Add symptoms that affect your whole body or don't have a specific location",
+    "browseAllGeneral": "Browse All General Symptoms",
+    "symptomsFor": "Symptoms for {bodyPart}",
+    "searchSymptomsPlaceholder": "Search symptoms...",
+    "symptomsFound": "{count} symptoms found",
+    "allCategories": "All",
+    "noSymptomsFound": "No symptoms found. Try a different search or category.",
+    "addCustomSymptomCard": "Add Your Custom Symptom",
+    "customSymptomDesc": "Can't find your symptom? Add a custom one with your own description and measurement scale.",
+    "customTag": "Custom Symptom",
+    "symptomInformation": "Symptom Information",
+    "symptomName": "Symptom Name *",
+    "symptomNamePlaceholder": "e.g., Unusual Tingling, Specific Pain, etc.",
+    "description": "Description (2-3 lines)",
+    "descriptionPlaceholder": "Describe your symptom in detail. What does it feel like? When does it occur?",
+    "measurementType": "Measurement Type",
+    "scale": "Scale (1-10)",
+    "temperature": "Temperature",
+    "frequency": "Frequency",
+    "custom": "Custom",
+    "minimumValue": "Minimum Value",
+    "maximumValue": "Maximum Value",
+    "customUnit": "Custom Unit (Optional)",
+    "customUnitPlaceholder": "e.g., times per day, level, intensity",
+    "duration": "Duration: How long have you had this symptom?",
+    "setExactDuration": "Set exact duration",
+    "useCommonDurations": "Use common durations",
+    "howLong": "How long?",
+    "unit": "Unit",
+    "startedAgo": "Started approximately {duration} {unit} ago",
+    "additionalNotes": "Additional Notes (Optional)",
+    "notesPlaceholder": "Describe your symptom in detail, any triggers, patterns, or other relevant information...",
+    "examples": "Examples",
+    "cancel": "Cancel",
+    "addSymptomToList": "Add Symptom to List",
+    "yourSymptoms": "Your Symptoms",
+    "save": "Save",
+    "clear": "Clear",
+    "noSymptomsAdded": "No symptoms added",
+    "noSymptomsAddedDesc": "Click on body parts or add general symptoms",
+    "startAIAnalysis": "Start AI Analysis",
+    "symptomsReady": "{count} symptom{s} ready for analysis",
+    "completeWorkflow": "Complete Workflow",
+    "workflowStep1": "Select Body Part: Click on the interactive body map",
+    "workflowStep2": "Choose Symptom: Select specific symptom from list or add custom symptom",
+    "workflowStep3": "Add Details: Specify duration, severity, and notes",
+    "workflowStep4": "Review & Analyze: Submit for AI-powered analysis",
+    "location": "Location",
+    "severity": "Severity",
+    "notes": "Notes",
+    "translateSymptoms": "Translate Symptoms",
+    "translating": "Translating...",
+    "translatedSuccess": "Symptoms translated to {language}"
+  },
+  "loading": {
+    "analyzingSymptoms": "Analyzing your symptoms with AI",
+    "checkingDatabase": "Checking medical database",
+    "generatingReport": "Generating personalized report",
+    "pleaseWait": "Please wait, this may take a moment...",
+    "aiProcessing": "AI is processing your symptoms",
+    "comparingPatterns": "Comparing with thousands of medical patterns",
+    "calculatingProbabilities": "Calculating condition probabilities",
+    "creatingActionPlan": "Creating personalized action plan",
+    "almostDone": "Almost done...",
+    "trustMessage": "Our AI is analyzing your symptoms with medical expertise"
+  },
+  "header": {
+    "step": "Step",
+    "stepNumber": "3 of 4"
+  },
+  "mhloading": {
+    "analyzingSymptoms": "Analyzing symptoms...",
+    "checkingDatabase": "Checking medical database...",
+    "comparingPatterns": "Comparing symptom patterns...",
+    "calculatingProbabilities": "Calculating probabilities...",
+    "creatingActionPlan": "Creating action plan...",
+    "almostDone": "Almost done...",
+    "generatingReport": "Generating report...",
+    "trustMessage": "Our AI is analyzing your symptoms. This may take a moment.",
+    "pleaseWait": "Please wait..."
+  },
+  "medicalHistory": {
+    "title": "Medical Context (Optional)",
+    "description": "Providing this information helps improve accuracy by up to 40%, but it's completely optional and not stored permanently.",
+    "privacyNotice": "This information is NOT stored and only used for this analysis session."
+  },
+  "benefits": {
+    "improvedAccuracy": "Improved Accuracy",
+    "accuracyDetail": "Up to 40% more accurate diagnosis",
+    "personalizedInsights": "Personalized Insights",
+    "insightsDetail": "Tailored to your health profile",
+    "betterRecommendations": "Better Recommendations",
+    "recommendationsDetail": "More relevant treatment options"
+  },
+  "formSections": {
+    "basicInfo": "Basic Information",
+    "chronicConditions": "Chronic Conditions",
+    "selectAll": "Select all that apply",
+    "medications": "Current Medications",
+    "allergies": "Known Allergies",
+    "lifestyle": "Lifestyle Factors (Optional)",
+    "familyHistory": "Family Medical History (Optional)"
+  },
+  "formFields": {
+    "age": "Age",
+    "gender": "Gender"
+  },
+  "placeholders": {
+    "age": "Enter your age",
+    "gender": "Select gender",
+    "otherConditions": "Other conditions (please specify)",
+    "medications": "e.g., Metformin 500mg daily, Vitamin D supplement...",
+    "allergies": "e.g., Penicillin, Sulfa drugs, Peanuts, Latex...",
+    "familyHistory": "e.g., Father had heart disease at age 55...",
+    "selectOption": "Select option"
+  },
+  "gender": {
+    "male": "Male",
+    "female": "Female",
+    "other": "Other / Prefer not to say"
+  },
+  "conditions": {
+    "diabetes": "Diabetes",
+    "hypertension": "Hypertension",
+    "asthma": "Asthma",
+    "heartDisease": "Heart Disease",
+    "kidneyDisease": "Kidney Disease",
+    "thyroid": "Thyroid Disorder",
+    "arthritis": "Arthritis",
+    "depression": "Depression/Anxiety",
+    "copd": "COPD",
+    "liver": "Liver Disease"
+  },
+  "medications": {
+    "description": "List all medications, supplements, and vitamins you're currently taking",
+    "dosageNote": "Include dosage and frequency if known"
+  },
+  "allergies": {
+    "important": "Important for medication safety recommendations"
+  },
+  "lifestyle": {
+    "smoking": "Smoking Status",
+    "alcohol": "Alcohol Consumption",
+    "exercise": "Exercise Frequency"
+  },
+  "lifestyleOptions": {
+    "smoking": {
+      "never": "Never smoked",
+      "former": "Former smoker",
+      "current": "Current smoker"
+    },
+    "alcohol": {
+      "never": "Never",
+      "occasional": "Occasionally",
+      "moderate": "Moderately",
+      "heavy": "Heavily"
+    },
+    "exercise": {
+      "none": "None",
+      "1-2/week": "1-2 times per week",
+      "3-4/week": "3-4 times per week",
+      "daily": "Daily or almost daily"
+    }
+  },
+  "guidance": {
+    "whyContextMatters": "Why Context Matters",
+    "points": {
+      "ageGender": "Age & Gender: Different conditions are more common at different ages",
+      "chronicConditions": "Chronic Conditions: Symptoms may be related to existing health issues",
+      "medications": "Medications: Some symptoms could be side effects",
+      "allergies": "Allergies: Critical for safe medication recommendations"
+    }
+  },
+  "completion": {
+    "title": "Form Completion",
+    "basicInfo": "Basic Information",
+    "chronicConditions": "Chronic Conditions",
+    "medications": "Medications",
+    "allergies": "Allergies",
+    "fieldsCompleted": "Fields completed"
+  },
+  "actions": {
+    "continueToAnalysis": "Continue to AI Analysis",
+    "completeBasicInfoFirst": "Complete Basic Information First",
+    "skipThisStep": "Skip This Step"
+  },
+  "accuracy": {
+    "improvesBy": "Providing information improves accuracy by:",
+    "upTo40": "Up to 40%"
+  },
+  "privacy": {
+    "title": "Your Privacy is Protected",
+    "noPersonalInfo": "No personal information is stored",
+    "dataDeleted": "Data is deleted after analysis completion",
+    "noConnection": "No connection to your medical records",
+    "anonymous": "Completely anonymous analysis"
+  },
+  "disclaimer": {
+    "text": "This tool is for informational purposes only. Always consult a healthcare professional for medical advice. Information provided here is not a substitute for professional medical diagnosis or treatment."
+  },
+  "qheader": {
+    "step": "Step",
+    "stepNumber": "3.5 of 4"
+  },
+  "questions": {
+    "title": "AI Follow-Up Questions",
+    "of": "of",
+    "questions": "questions",
+    "progress": "Progress",
+    "whyThisMatters": "Why this matters:",
+    "defaultReasoning": "This information helps differentiate between similar conditions",
+    "hideAnswers": "Hide Answers",
+    "viewAnswers": "View Answers",
+    "previousAnswers": "Your Previous Answers",
+    "edit": "Edit"
+  },
+  "ai": {
+    "name": "MediSense AI",
+    "status": "Analyzing symptoms",
+    "typing": "AI is thinking...",
+    "introduction": "I'd like to ask a few questions to better understand your symptoms and provide more accurate analysis.",
+    "improvement": "Each answer improves accuracy by up to 15%"
+  },
+  "answers": {
+    "notAnswered": "Not answered",
+    "skipped": "Skipped",
+    "selected": "Selected"
+  },
+  "navigation": {
+    "previous": "Previous",
+    "skip": "Skip Question",
+    "nextQuestion": "Next Question",
+    "finishAnalysis": "Complete Analysis"
+  },
+  "qstats": {
+    "title": "AI Analysis Progress",
+    "currentAccuracy": "Current Accuracy",
+    "potentialAccuracy": "Potential Accuracy",
+    "improvementPerAnswer": "Each question answered can improve accuracy by up to:",
+    "upTo15": "Up to 15%"
+  },
+  "tips": {
+    "title": "Tips for Best Results",
+    "recentSymptoms": "Answer based on your most recent symptoms",
+    "specificDetails": "Be specific about timing and triggers",
+    "avoidSkipping": "Don't skip questions unless unsure",
+    "editLater": "You can edit answers later"
+  },
+  "progress": {
+    "title": "Progress Summary",
+    "complete": "Complete",
+    "answered": "Answered",
+    "total": "Total Questions"
+  },
+  "results": {
+    "title": "AI Analysis Results",
+    "basedOn": "Based on",
+    "symptoms": "symptoms",
+    "analyzedAt": "Analyzed at",
+    "confidence": "Confidence Level",
+    "searchConditions": "Search conditions...",
+    "disclaimer": {
+      "title": "Important Medical Disclaimer",
+      "text": "This AI analysis is for informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition."
+    },
+    "export": "Export",
+    "print": "Print",
+    "potentialConditions": "Potential Conditions",
+    "filterBy": "Filter by:",
+    "allLevels": "All Levels",
+    "highPriority": "High Priority",
+    "mediumPriority": "Medium Priority",
+    "lowPriority": "Low Priority",
+    "of": "of",
+    "conditions": "conditions",
+    "probability": "Probability",
+    "match": "match",
+    "estimatedSeverity": "Estimated Severity",
+    "severity": "Severity",
+    "fullDescription": "Full Description",
+    "urgencyAction": "Urgency & Action",
+    "seekImmediate": "Seek immediate medical attention",
+    "scheduleAppointment": "Schedule appointment within 1-2 days",
+    "monitorSelfCare": "Monitor and consider self-care",
+    "symptomsAnalysis": "Symptoms Analysis",
+    "matchingSymptoms": "Matching Symptoms",
+    "notPresentSymptoms": "Not Present Symptoms",
+    "diagnosticTests": "Diagnostic Tests",
+    "possibleCauses": "Possible Causes",
+    "riskFactors": "Risk Factors",
+    "complications": "Possible Complications",
+    "timeline": "Expected Timeline",
+    "learnMore": "Learn More About This Condition",
+    "findDoctor": "Find a Doctor",
+    "traditionalOptions": "Traditional Medicine Options",
+    "basedOnPattern": "Based on symptom pattern analysis",
+    "chineseMedicine": "Chinese Medicine",
+    "sasangMedicine": "Sasang Medicine",
+    "bestFor": "Best for:",
+    "more": "more",
+    "keyIngredients": "Key Ingredients",
+    "usageInstructions": "Usage Instructions",
+    "dosage": "Dosage",
+    "preparation": "Preparation",
+    "duration": "Recommended Duration",
+    "contraindications": "Contraindications & Precautions",
+    "traditionalDisclaimer": "Traditional medicines should be prescribed by qualified practitioners. This information is for educational purposes only.",
+    "traditionalSystem": "Traditional Chinese Medicine and Sasang Medicine are holistic systems that consider individual constitution and pattern diagnosis. Consultation with a qualified practitioner is essential for proper diagnosis and treatment.",
+    "recommendedSteps": "Recommended Next Steps",
+    "consultProvider": "Consult a Healthcare Provider",
+    "shareResults": "Share these results with your doctor for proper diagnosis",
+    "monitorSymptoms": "Monitor Symptoms",
+    "keepTrack": "Keep track of changes and new symptoms",
+    "considerTraditional": "Consider Traditional Options",
+    "consultPractitioners": "Consult with certified TCM or Sasang practitioners",
+    "scheduleAppointmentBtn": "Schedule Doctor Appointment",
+    "editSymptoms": "Edit Symptoms",
+    "dashboard": "Dashboard",
+    "history": "History",
+    "getFollowup": "Get AI Follow-up",
+    "analysisId": "Analysis ID",
+    "defaultDescription": "Condition based on symptom pattern analysis",
+    "exportDisclaimer": "AI-generated analysis for informational purposes only",
+    "noConditions": "No conditions found for the selected symptoms",
+    "addSymptoms": "Add More Symptoms",
+    "noMedications": "No traditional medicine recommendations available"
+  }
+
+}
