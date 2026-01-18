@@ -924,7 +924,7 @@ const SymptomSelectionDashboard = ({ setSymptoms, setAIQuestions }) => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/symptoms/analyze",
+        "https://medisense-genai.up.railway.app/api/symptoms/analyze",
         { symptoms: selectedSymptoms },
       );
 

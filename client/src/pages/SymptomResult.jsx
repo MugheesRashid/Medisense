@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 import { toast, ToastContainer } from "react-toastify";
@@ -520,6 +520,7 @@ const SymptomResult = ({ results }) => {
   const [severityFilter, setSeverityFilter] = useState("all");
   const [analysisConfidence, setAnalysisConfidence] = useState(89);
   const [searchTerm, setSearchTerm] = useState("");
+  const hasrun = useRef(false)
 
   useEffect(() => {
     if (!results.diagnose || results == null) {
@@ -527,13 +528,19 @@ const SymptomResult = ({ results }) => {
       navigate("/symptoms");
       return;
     }
+  }, [results]);
+  useEffect(() => {
+    if (hasrun.current) return;
 
-    if(results.diagnose && results.diagnose.length > 0) {
-      toast.success("Diagnosis completed successfully!")
-    } else{
-      toast.error("No diagnosis could be made based on the provided symptoms.")
+    hasrun.current = true;
+
+    if (results.diagnose && results.diagnose.length > 0) {
+      toast.success("Diagnosis completed successfully!");
+    } else {
+      toast.error("No diagnosis could be made based on the provided symptoms.");
     }
-
+  }, []);
+  useEffect(() => {
     const savedSymptoms = localStorage.getItem("medisense_symptoms_draft");
     if (savedSymptoms) {
       try {
@@ -790,8 +797,7 @@ const SymptomResult = ({ results }) => {
                 <Icons.ChevronLeft className="w-5 h-5 text-gray-600" />
               </button>
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-gradient-to-br bg-[url('/logo.png')] bg-center bg-cover rounded-lg flex items-center justify-center shadow-sm">
-                </div>
+                <div className="w-8 h-8 bg-gradient-to-br bg-[url('/logo.png')] bg-center bg-cover rounded-lg flex items-center justify-center shadow-sm"></div>
                 <span className="text-lg font-bold text-gray-800">
                   Medi
                   <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
@@ -1341,7 +1347,13 @@ const SymptomResult = ({ results }) => {
                       {t("results.noConditions")}
                     </div>
                     <button
-                      onClick={() => {localStorage.setItem("workflowInProgress", "symptom_selection"); navigate("/symptoms")}}
+                      onClick={() => {
+                        localStorage.setItem(
+                          "workflowInProgress",
+                          "symptom_selection",
+                        );
+                        navigate("/symptoms");
+                      }}
                       className="px-4 py-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg hover:shadow-lg transition-all duration-200 text-sm"
                     >
                       {t("results.addSymptoms")}

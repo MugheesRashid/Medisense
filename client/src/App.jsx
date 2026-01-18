@@ -14,7 +14,7 @@ import { LanguageProvider } from "./context/LanguageContext";
 const App = () => {
   const [symptoms, setSymptoms] = useState([]);
   const [medicalHistory, setMedicalHistory] = useState(null);
-  const [results, setResults] = useState({});
+  const [results, setResults] = useState({noresult: true});
   const [AIQuestions, setAIQuestions] = useState([]);
 
   return (

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 import axios from "axios";
@@ -36,9 +36,7 @@ const SimpleLoader = ({ messages, currentMessageIndex, onCancel }) => {
           </div>
 
           {/* Cancel Button */}
-          <button
-            className="px-6 py-2 border border-purple-300 text-purple-700 rounded-xl hover:bg-purple-50 transition mx-auto block"
-          >
+          <button className="px-6 py-2 border border-purple-300 text-purple-700 rounded-xl hover:bg-purple-50 transition mx-auto block">
             Please wait...
           </button>
         </div>
@@ -359,7 +357,7 @@ const Icons = {
 // Guide Popup Component
 const GuidePopup = ({ onClose }) => {
   const { t } = useLanguage();
-  
+
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center animate-fadeIn">
       <div className="relative max-w-lg w-full mx-4">
@@ -368,20 +366,40 @@ const GuidePopup = ({ onClose }) => {
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center">
               <div className="w-10 h-10 bg-gradient-to-br from-purple-100 to-indigo-100 rounded-full flex items-center justify-center mr-3">
-                <svg className="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <svg
+                  className="w-5 h-5 text-purple-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-800">
-                {t('guide.title')}
+                {t("guide.title")}
               </h3>
             </div>
             <button
               onClick={onClose}
               className="p-2 hover:bg-gray-100 rounded-lg transition"
             >
-              <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="w-5 h-5 text-gray-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
           </div>
@@ -390,38 +408,78 @@ const GuidePopup = ({ onClose }) => {
           <div className="space-y-4 mb-6">
             <div className="flex items-start space-x-3">
               <div className="w-6 h-6 bg-gradient-to-br from-green-100 to-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg className="w-3 h-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                <svg
+                  className="w-3 h-3 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M5 13l4 4L19 7"
+                  />
                 </svg>
               </div>
-              <p className="text-gray-700">{t('guide.point1')}</p>
+              <p className="text-gray-700">{t("guide.point1")}</p>
             </div>
-            
+
             <div className="flex items-start space-x-3">
               <div className="w-6 h-6 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg className="w-3 h-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                <svg
+                  className="w-3 h-3 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                  />
                 </svg>
               </div>
-              <p className="text-gray-700">{t('guide.point2')}</p>
+              <p className="text-gray-700">{t("guide.point2")}</p>
             </div>
-            
+
             <div className="flex items-start space-x-3">
               <div className="w-6 h-6 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg className="w-3 h-3 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                <svg
+                  className="w-3 h-3 text-purple-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
                 </svg>
               </div>
-              <p className="text-gray-700">{t('guide.point3')}</p>
+              <p className="text-gray-700">{t("guide.point3")}</p>
             </div>
-            
+
             <div className="flex items-start space-x-3">
               <div className="w-6 h-6 bg-gradient-to-br from-amber-100 to-orange-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg className="w-3 h-3 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <svg
+                  className="w-3 h-3 text-amber-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
                 </svg>
               </div>
-              <p className="text-gray-700">{t('guide.point4')}</p>
+              <p className="text-gray-700">{t("guide.point4")}</p>
             </div>
           </div>
 
@@ -430,7 +488,7 @@ const GuidePopup = ({ onClose }) => {
             onClick={onClose}
             className="w-full px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-xl hover:shadow-lg hover:shadow-purple-500/30 transition font-semibold"
           >
-            {t('guide.getStarted')}
+            {t("guide.getStarted")}
           </button>
         </div>
       </div>
@@ -454,26 +512,38 @@ const FollowUpQuestions = ({
   const [finalSymptoms, setFinalSymptoms] = useState(symptoms);
   const [isLoading, setIsLoading] = useState(false);
   const [showGuide, setShowGuide] = useState(false);
-  const [currentLoadingMessageIndex, setCurrentLoadingMessageIndex] = useState(0);
+  const [currentLoadingMessageIndex, setCurrentLoadingMessageIndex] =
+    useState(0);
   const navigate = useNavigate();
+  const hasRun = useRef(false);
 
   useEffect(() => {
-  let interval;
-  if (isLoading) {
-    interval = setInterval(() => {
-      setCurrentLoadingMessageIndex((prev) => (prev + 1) % 3);
-    }, 3000);
-  }
-  return () => clearInterval(interval);
-}, [isLoading]);
-
+    let interval;
+    if (isLoading) {
+      interval = setInterval(() => {
+        setCurrentLoadingMessageIndex((prev) => (prev + 1) % 3);
+      }, 3000);
+    }
+    return () => clearInterval(interval);
+  }, [isLoading]);
 
   useEffect(() => {
+    // If this has already run, skip everything
+    if (hasRun.current) return;
+
+    // Mark as run immediately
+    hasRun.current = true;
+
+    // 1. Handle Medical History Toast
     if (localStorage.getItem("medisense_medical_history")) {
       toast.info("Medical history Completed. Using it for better analysis.");
     } else {
       toast.info("Medical History Skipped.");
     }
+  }, []);
+
+  useEffect(() => {
+    // 2. Handle Guide Visibility
     const hasSeenGuide = localStorage.getItem("medisense_guide_seen");
     if (!hasSeenGuide) {
       setTimeout(() => {
@@ -481,11 +551,10 @@ const FollowUpQuestions = ({
       }, 500);
     }
   }, []);
-
   const handleCloseGuide = () => {
-  setShowGuide(false);
-  localStorage.setItem("medisense_guide_seen", "true");
-};
+    setShowGuide(false);
+    localStorage.setItem("medisense_guide_seen", "true");
+  };
 
   useEffect(() => {
     if (questionsByAI.length === 0) {
@@ -572,16 +641,22 @@ const FollowUpQuestions = ({
         console.log(followUpAnswers);
         // This would be your actual API call
         const response = await axios.post(
-          "http://localhost:3000/api/symptoms/diagnose",
-          { symptoms: symptomsToSend, medicalHistory: localStorage.getItem(medicalHistory), followUpAnswers },
+          "https://medisense-genai.up.railway.app/api/symptoms/diagnose",
+          {
+            symptoms: symptomsToSend,
+            medicalHistory: localStorage.getItem(medicalHistory),
+            followUpAnswers,
+          },
         );
         setResults(response.data);
         localStorage.setItem("workflowInProgress", "results");
         navigate("/results");
       } catch (error) {
         setIsLoading(false);
-        toast.error("The application is currently very busy try again later. Medical History got deleted due to security concers, pls fill it again.")
-        localStorage.removeItem("medisense_medical_history")
+        toast.error(
+          "The application is currently very busy try again later. Medical History got deleted due to security concers, pls fill it again.",
+        );
+        localStorage.removeItem("medisense_medical_history");
         console.error("Error:", error);
       }
     }
@@ -622,22 +697,25 @@ const FollowUpQuestions = ({
       : 0;
   };
 
-if (isLoading) {
-  return <SimpleLoader 
-    messages={["Processing your answers...", "Analyzing patterns...", "Generating insights..."]}
-    currentMessageIndex={currentLoadingMessageIndex}
-    onCancel={() => setIsLoading(false)}
-  />;
-  
-
-}
-
+  if (isLoading) {
+    return (
+      <SimpleLoader
+        messages={[
+          "Processing your answers...",
+          "Analyzing patterns...",
+          "Generating insights...",
+        ]}
+        currentMessageIndex={currentLoadingMessageIndex}
+        onCancel={() => setIsLoading(false)}
+      />
+    );
+  }
 
   return (
     <div
       className={`min-h-screen bg-gradient-to-br from-gray-50 via-white to-indigo-50 ${language === "ur" ? "rtl" : "ltr"}`}
     >
-          {showGuide && <GuidePopup onClose={handleCloseGuide} />}
+      {showGuide && <GuidePopup onClose={handleCloseGuide} />}
       {/* Compact Header */}
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-200/50 shadow-sm">
         <div className="container mx-auto px-4 py-3">
@@ -653,8 +731,7 @@ if (isLoading) {
                 <Icons.ChevronLeft className="w-5 h-5 text-gray-600" />
               </button>
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-gradient-to-br bg-[url('/logo.png')] bg-center bg-cover rounded-lg flex items-center justify-center">
-                </div>
+                <div className="w-8 h-8 bg-gradient-to-br bg-[url('/logo.png')] bg-center bg-cover rounded-lg flex items-center justify-center"></div>
                 <span className="text-lg font-bold text-gray-800">
                   Medi
                   <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
@@ -1142,23 +1219,22 @@ if (isLoading) {
         </div>
       </main>
       <style jsx>{`
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: scale(0.95);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: scale(0.95);
+          }
+          to {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
 
-  .animate-fadeIn {
-    animation: fadeIn 0.3s ease-out;
-  }
-`}</style>
+        .animate-fadeIn {
+          animation: fadeIn 0.3s ease-out;
+        }
+      `}</style>
     </div>
-    
   );
 };
 
