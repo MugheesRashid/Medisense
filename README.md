@@ -238,31 +238,4 @@ This integration isn't an afterthought. It's a cultural bridge — honoring the 
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Here's how:
-
-1. **Fork** the repository
-2. **Create** your feature branch
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-3. **Commit** your changes
-   ```bash
-   git commit -m "Add: your feature description"
-   ```
-4. **Push** to your branch
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-5. **Open a Pull Request** against `main`
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License**.
-
----
-
 > 💚 *Built to make healthcare guidance accessible to everyone — regardless of language, location, or background.*
