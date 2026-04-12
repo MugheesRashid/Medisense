@@ -924,7 +924,7 @@ const SymptomSelectionDashboard = ({ setSymptoms, setAIQuestions }) => {
 
     try {
       const response = await axios.post(
-        "https://medisense-genai.up.railway.app/api/symptoms/analyze",
+        "https://medisense-4ncg.vercel.app/api/symptoms/analyze",
         { symptoms: selectedSymptoms },
       );
 

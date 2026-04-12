@@ -641,7 +641,7 @@ const FollowUpQuestions = ({
         console.log(followUpAnswers);
         // This would be your actual API call
         const response = await axios.post(
-          "https://medisense-genai.up.railway.app/api/symptoms/diagnose",
+          "https://medisense-4ncg.vercel.app/api/symptoms/diagnose",
           {
             symptoms: symptomsToSend,
             medicalHistory: localStorage.getItem(medicalHistory),
